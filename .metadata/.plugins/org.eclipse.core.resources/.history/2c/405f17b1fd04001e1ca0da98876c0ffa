@@ -1,0 +1,23 @@
+package cgginterns.hibenate.sqlquery;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.NativeQuery;
+
+public class SQLExample {
+
+	public static void main(String[] args) {
+		SessionFactory factory = new Configuration().configure().buildSessionFactory();
+		Session session = factory.openSession();
+		String query = "select * from student";
+		
+		NativeQuery query2 = session.createNativeQuery(query);
+		List list = query2.list();
+		
+		session.close();
+		factory.close();
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package cgginterns.lambdas;
+
+public class LambdaExample {
+	public static void main(String[] args) {
+		//implementing interface
+		MyInterface1 i1 = ()->{System.out.println("Lambda with zero parameters");
+		};
+		
+	}
+
+}

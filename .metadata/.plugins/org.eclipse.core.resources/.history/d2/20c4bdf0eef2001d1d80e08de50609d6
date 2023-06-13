@@ -1,0 +1,21 @@
+package multi;
+
+class MyLoopThread extends Thread{
+	boolean stop=false;
+	public void run() {
+		System.out.println("Iam thread");
+	}
+}
+
+public class LoopDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyLoopThread l=new MyLoopThread();
+		l.setName("First");
+		l.start();
+		System.in.read();
+		l.stop=true;
+	}
+
+}

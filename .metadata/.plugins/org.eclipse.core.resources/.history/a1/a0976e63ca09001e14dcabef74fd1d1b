@@ -1,0 +1,11 @@
+package cgginterns.lambdas;
+
+public class DivideDemo {
+	MyInterface8 i8 = (a,b)->{
+		if(b==0)
+			return 0;
+		return a/b;
+	};
+	i8.di
+
+}

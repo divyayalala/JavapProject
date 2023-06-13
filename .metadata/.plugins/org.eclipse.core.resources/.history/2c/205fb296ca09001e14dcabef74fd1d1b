@@ -1,0 +1,7 @@
+package cgginterns.lambdas;
+
+@FunctionalInterface
+public interface foo {
+	
+
+}

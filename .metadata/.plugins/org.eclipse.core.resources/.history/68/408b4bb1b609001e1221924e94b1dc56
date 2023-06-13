@@ -1,0 +1,6 @@
+package cgginterns.lambdas;
+
+public class MyInterface1 {
+	public abstract void method1();
+
+}

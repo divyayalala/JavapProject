@@ -1,0 +1,6 @@
+package cgginterns.functionalinterface;
+
+@FunctionalInterface
+public interface Interface1 {
+
+}

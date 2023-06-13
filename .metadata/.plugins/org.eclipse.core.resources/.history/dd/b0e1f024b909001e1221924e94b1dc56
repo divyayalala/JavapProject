@@ -1,0 +1,6 @@
+package cgginterns.lambdas;
+
+@FunctionalInterface
+public interface MyInterface3 {
+          void method3();
+}

@@ -1,0 +1,33 @@
+package cgginterns.lambdas;
+
+public class LambdaExample {
+	public static void main(String[] args) {
+		//implementing interface
+		createLambda();
+		anonymousClassZeroParam();
+		System.out.println("----------------------------------");
+		lambdaWithOneParameter();
+	}
+
+	private static void anonymousClassZeroParam() {
+		MyInterface1 i1 = new MyInterface1(){
+
+			@Override
+			public void method1() {
+				System.out.println("anonymous class");
+				
+			}
+			
+		};
+		i1.method1();
+		
+	}
+
+	private static void createLambda() {
+		MyInterface1 i = ()->{System.out.println("Lambda with zero parameters");
+		};
+		//calling lambda
+		i.method1();
+	}
+
+}

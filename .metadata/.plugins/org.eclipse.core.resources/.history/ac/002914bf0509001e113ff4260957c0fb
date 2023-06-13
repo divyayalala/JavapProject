@@ -1,0 +1,16 @@
+package cgginterns.defaultstaticmethods;
+
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		 MyInterface myClass = new MyClass();
+		 ArrayList<String> list = new ArrayList<String>();
+		 list.add("divya");
+		 list.add("fariha");
+		 list.add("nandini");
+
+	}
+
+}

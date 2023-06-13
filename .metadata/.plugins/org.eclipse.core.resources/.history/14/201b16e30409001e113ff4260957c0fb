@@ -1,0 +1,18 @@
+package cgginterns.defaultstaticmethods;
+
+import java.util.List;
+
+public class MyClass implements MyInterface {
+
+	@Override
+	public int getMaxnum(List<Integer> intList) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package cgginterns.hiberante.firstlevelcache;
+
+public class FirstLevelCache {
+
+}

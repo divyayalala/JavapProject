@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=BasicProj/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1681104238066"/>
+    <typeInfo handle="=JavaNewFeaturesProject/src&lt;cgginterns.defaultstaticmethods{MyInterface.java[MyInterface" modifiers="513" timestamp="1686562622986"/>
+    <typeInfo handle="=JavaNewFeaturesProject/src&lt;cgginterns.defaultstaticmethods{I1.java[I1" modifiers="513" timestamp="1686564124523"/>
+    <typeInfo handle="=JavaNewFeaturesProject/src&lt;cgginterns.defaultstaticmethods{I2.java[I2" modifiers="513" timestamp="1686564152344"/>
+    <typeInfo handle="=BasicProj/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util(ArrayList.class[ArrayList" modifiers="33" timestamp="1681104238066"/>
+    <typeInfo handle="=HibernateProject/C:\/Users\/CGG\/.m2\/repository\/antlr\/antlr\/2.7.7\/antlr-2.7.7.jar=/maven.pomderived=/true=/=/maven.groupId=/antlr=/=/maven.artifactId=/antlr=/=/maven.version=/2.7.7=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;antlr.collections(List.class[List" modifiers="1537" timestamp="1685338948280"/>
+    <typeInfo handle="=BasicProj/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util(List.class[List" modifiers="1537" timestamp="1681104238066"/>
+    <typeInfo handle="=BasicProj/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1681104238066"/>
+    <typeInfo handle="=JavaNewFeaturesProject/src&lt;cgginterns.functionalinterface{Interface1.java[Interface1" modifiers="513" timestamp="1686634766310"/>
+</typeInfoHistroy>

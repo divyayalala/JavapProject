@@ -1,0 +1,11 @@
+package cgginterns.defaultstaticmethods;
+
+import java.util.Collections;
+import java.util.List;
+
+public interface MyInterface {
+	default public List<Student> sortStudents(List<Student> stuList){
+		Collections.sort(stuList);
+	}
+
+}

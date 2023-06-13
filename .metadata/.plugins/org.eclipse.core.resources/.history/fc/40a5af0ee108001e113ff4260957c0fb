@@ -1,0 +1,51 @@
+package cgginterns.localdate;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
+
+public class LocalDateExample {
+   public static void main(String[] args) {
+	LocalDate now = LocalDate.now();
+	System.out.println(now);//today's date will be displayed
+	
+	LocalDate of = LocalDate.of(2014,Month.JUNE,2);//converts to date
+	System.out.println(of);
+	System.out.println("Tomorrow date:"+now.plusDays(1));
+	System.out.println("last month:"+now.minusMonths(1));
+	System.out.println(now.isLeapYear());
+	System.out.println("move to 30th day of month :"+now.withDayOfYear(1));
+	
+	System.out.println("-------------------------------");
+	LocalDate initialDate = LocalDate.now();
+	LocalDate finalDate = initialDate.plus(Period.ofDays(5));
+	int days = Period.between(initialDate, finalDate).getDays();
+	System.out.println(days);
+	
+	System.out.println("-----------------------------------");
+	long between = ChronoUnit.DAYS.between(initialDate, finalDate);
+	System.out.println(between);
+	
+	System.out.println("-----------------------------------");
+	//to calculate age
+	LocalDate today = LocalDate.now();
+	LocalDate of2 = LocalDate.of(2001, Month.MARCH, 19);
+	Period between2 = Period.between(of2, today);
+	long days2 = ChronoUnit.DAYS.between(of2, today);
+	System.out.println(between2);
+	System.out.println(days2);
+	
+	System.out.println("-----------------------------------");
+	
+	//to calculate next birthday
+	LocalDate nextBDay = of2.withYear(today.getYear());
+	System.out.println(nextBDay);
+	if(nextBDay.isBefore(today)||nextBDay.isEqual(today)) {
+		nextBDay = nextBDay.plusYears(1);
+	}
+	Period p = Period.between(nextBDay, today);
+	long p1 = ChronoUnit.DAYS.between(nextBDay, today);
+	System.out.println("There are "+p.getMonths()+" months, and "+p.getDays()+" days until your next Birthday ("+p1+" total");
+}
+}

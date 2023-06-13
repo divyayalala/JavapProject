@@ -1,0 +1,24 @@
+package cgginterns.hibernate.secondlevelcache;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class Test {
+
+	public static void main(String[] args) {
+		SessionFactory factory = new Configuration().configure().buildSessionFactory();
+		
+		Session session = factory.openSession();
+		session.get(null, session)
+		
+		session.close();
+		
+		Session session2 = factory.openSession();
+		session2.close();
+		
+		
+		factory.close();
+	}
+
+}

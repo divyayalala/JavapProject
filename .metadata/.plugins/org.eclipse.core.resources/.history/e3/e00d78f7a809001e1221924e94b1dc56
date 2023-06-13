@@ -1,0 +1,31 @@
+package cgginterns.functionalinterface;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		//anonymous class
+		createThreadUsingAnonymousClass();
+		createThreadUsingLambda();
+	}
+
+	private static void createThreadUsingLambda() {
+		Runnable r1 = ()->{
+			System.out.println("My Runnable");
+		};
+		
+	}
+
+	private static void createThreadUsingAnonymousClass() {
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("I am thread my task is executing");
+				
+			}
+		};
+		Thread t = new Thread(r);
+		t.start();
+	}
+
+}

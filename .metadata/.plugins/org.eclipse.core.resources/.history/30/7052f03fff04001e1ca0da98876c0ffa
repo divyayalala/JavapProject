@@ -1,0 +1,10 @@
+package cgginterns.hibernate.cascade;
+
+public class Cascade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

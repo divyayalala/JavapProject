@@ -1,0 +1,20 @@
+package multi;
+
+class MyThread extends Thread{
+	public void run() {
+		System.out.println(this.getName());
+	}
+}
+public class Multithreading2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mythread myThread=new MyThread("First Thread");
+		myThread.setName("First Thread");
+		myThread.start();
+		Mythread myThread1=new MyThread("Second Thread");	
+		myThread1.setName("Second Thread");
+		myThread1.start();
+	}
+
+}

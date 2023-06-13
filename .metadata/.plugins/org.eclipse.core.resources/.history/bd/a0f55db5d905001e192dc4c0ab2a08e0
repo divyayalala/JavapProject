@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class>
+    <id name = "empId" column="emp_id">
+    </id>
+    <property name="empName" column="emp_name" type = "string"></property>
+    <property name="empSal" column = "emp_sal" type="double"></property>
+    <many-to-one name = "dept" class="cgginterns.xmlmapping.Department" column = "dept_id"></many-to-one>
+    </class>
+    </hibernate-mapping>

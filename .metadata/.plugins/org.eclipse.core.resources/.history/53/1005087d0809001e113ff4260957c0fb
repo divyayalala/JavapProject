@@ -1,0 +1,5 @@
+package cgginterns.defaultstaticmethods;
+
+public class Welcome implements I1, I2 {
+
+}
