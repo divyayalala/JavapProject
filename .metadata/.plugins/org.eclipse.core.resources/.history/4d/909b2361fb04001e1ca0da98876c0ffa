@@ -1,5 +1,0 @@
-package cgg.hibernate.pagination;
-
-public class HQLPagination {
-
-}

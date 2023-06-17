@@ -1,5 +1,0 @@
-package cgginterns.hibernate.criteria;
-
-public class CriteriaExample {
-
-}

@@ -1,7 +1,0 @@
-package cgginterns.localdatetime;
-
-public class LocalTime {
-     public static void main(String[] args) {
-		LocalTime time = LocalTime.now();
-	}
-}

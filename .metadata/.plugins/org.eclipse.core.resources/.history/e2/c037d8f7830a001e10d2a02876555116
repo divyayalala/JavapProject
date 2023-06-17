@@ -1,0 +1,7 @@
+package mthodreferenceexample;
+
+@FunctionalInterface
+public interface PersonManager {
+	Person getperson();
+
+}

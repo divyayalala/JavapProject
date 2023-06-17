@@ -1,0 +1,19 @@
+package mthodreferenceexample;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class MethodReferenceExample {
+
+	public static void main(String[] args) {
+	     ExecutorService executorService = Executors.newSingleThreadExecutor();
+	     
+	     //Runnable r1 = ()->System.out.println("my task is executing.......");
+	     Runnable r1 = MethodReferenceExample::myRun; 
+	     executorService.execute(r1);
+	}
+	private static void myRun() {
+		System.out.println("My task is running......");
+	}
+
+}

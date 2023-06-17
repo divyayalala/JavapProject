@@ -1,0 +1,21 @@
+package cgginters.lambdathisreference;
+
+public class ThisReferenceExample {
+	public static void main(String[] args) {
+		int b = 30;
+		ThisReferenceExample.doOperate(b, new Operation() {
+
+			@Override
+			public void Operate(int i) {
+				System.out.println(b+i);
+				
+			}
+			
+		});
+	}
+	private static void doOperate(int i,Operation o) {
+		o.Operate(i);
+		
+	}
+
+}

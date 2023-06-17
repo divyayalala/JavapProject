@@ -1,0 +1,14 @@
+package cgginterns.lambdas;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class SampleExample {
+	public static void main(String[] args) {
+		List<Person> people = Arrays.asList(new Person("divya","yalala",30),new Person("nandu","jillala",20),new Person("fariha","fathima",30));
+	    //sort list by lastname
+		Collections.sort(people, (o1,o2)->o1.getLastName().compareTo(o2.getLastName()));
+	}
+
+}

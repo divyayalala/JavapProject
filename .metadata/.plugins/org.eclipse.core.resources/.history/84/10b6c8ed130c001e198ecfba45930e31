@@ -1,0 +1,12 @@
+package cgginterns.streamapi;
+
+import java.util.Arrays;
+
+public class StreamCreationExample {
+	public static void main(String[] args) {
+		String[] arr = {"ABC","BCD","CDE"};
+		Stream<String> stream = Arrays.stream(arr);
+		
+	}
+
+}
